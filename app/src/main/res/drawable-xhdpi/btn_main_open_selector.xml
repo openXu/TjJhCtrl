@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 开馆 -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:drawable="@drawable/btn_main_open_pres" android:state_pressed="true"/>
+    <item android:drawable="@drawable/btn_main_open_nom" android:state_pressed="false"/>
+    <item android:drawable="@drawable/btn_main_open_nom"/>
+</selector>

@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_window"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/activity_bg" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical" >
+        <TextView
+            android:id="@+id/tv_devs"
+            android:layout_width="@dimen/main_btn_width"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dip"
+            android:background="@drawable/btn_ctrl_main_selector"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="lamp"
+            android:text="设备控制"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/def_text_size" />
+
+        <TextView
+            android:id="@+id/tv_single"
+            android:layout_width="@dimen/main_btn_width"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dip"
+            android:background="@drawable/btn_ctrl_main_selector"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="media"
+            android:text="单设备控制"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/def_text_size" />
+        <!-- 最外蓝色 -->
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:paddingBottom="3dip"
+        android:paddingLeft="15dip"
+        android:paddingRight="15dip"
+        android:paddingTop="3dip"
+        android:text="设备状态" />
+
+</RelativeLayout>

@@ -1,0 +1,37 @@
+<resources>
+
+    <dimen name="def_text_size">30sp</dimen> <!-- 默认字体大小 -->
+    <dimen name="title_text_size1">45sp</dimen>
+    <dimen name="title_text_size2">37sp</dimen>
+    <!-- mainactivity -->
+    <dimen name="vertical_spacing">30dip</dimen>
+    <dimen name="main_btn_width">230dip</dimen>
+    <dimen name="btn_main_onoff_text">40sp</dimen>
+    <dimen name="btn_main_onoff_size">130dip</dimen>
+
+    <!-- activity_ctrl.xml -->
+    <dimen name="ctrl_bg_margin">30dip</dimen>
+    <dimen name="ctrl_margin">20dip</dimen>
+    <dimen name="magin_title">30dip</dimen>
+    <dimen name="btn_cancel">120dip</dimen>
+    <dimen name="cancle_btn_margin">3dip</dimen>
+
+    <!-- activity_lamp.xml -->
+    <dimen name="lamp_land_btn_margin1">20dip</dimen> <!-- 每两个按钮间隔 -->
+    <dimen name="lamp_land_btn_margin2">10dip</dimen> <!-- 两个按钮之间间隔 -->
+    <dimen name="lamp_port_btn_margin1">20dip</dimen> <!-- 每两个按钮间隔 -->
+    <dimen name="lamp_port_btn_margin2">10dip</dimen> <!-- 两个按钮之间间隔 -->
+
+
+    <!-- activity_media.xml -->
+    <dimen name="media_land_btn_size">200dip</dimen> <!-- 横屏按钮宽度 -->
+    <dimen name="media_land_margintop">20dip</dimen> <!-- 模块之间上下距离 -->
+    <dimen name="media_land_btn_margin_top">10dip</dimen> <!-- 按钮上下距离 -->
+    <dimen name="media_land_btn_margin_left">30dip</dimen> <!-- 按钮左右距离 -->
+
+    <dimen name="media_port_btn_size">200dip</dimen> <!-- 横屏按钮宽度 -->
+    <dimen name="media_port_margintop">20dip</dimen> <!-- 模块之间上下距离 -->
+    <dimen name="media_port_btn_margin_top">10dip</dimen> <!-- 按钮上下距离 -->
+    <dimen name="media_port_btn_margin_left">30dip</dimen> <!-- 按钮左右距离 -->
+
+</resources>

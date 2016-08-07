@@ -1,0 +1,623 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_window"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/activity_bg" >
+
+    <!-- 横屏 -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btn_status"
+        android:layout_margin="@dimen/ctrl_margin"
+        android:background="@drawable/activity_ctrl_bg"
+        android:padding="@dimen/ctrl_margin" >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginTop="@dimen/media_land_margintop"
+                    android:gravity="center_vertical"
+                    android:text="多媒体控制(横屏)"
+                    android:textColor="@color/color_white"
+                    android:textSize="@dimen/title_text_size1" />
+                <!-- 序厅投影 -->
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/media_land_margintop"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="序厅投影"
+                        android:textColor="@color/color_white"
+                        android:textSize="@dimen/title_text_size2" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginTop="@dimen/media_land_btn_margin_top"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/tv_xtty_qd"
+                            android:layout_width="@dimen/media_land_btn_size"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/btn_ctrl_selector"
+                            android:clickable="true"
+                            android:gravity="center"
+                            android:text="设备启动"
+                            android:textColor="@color/color_white"
+                            android:textSize="@dimen/def_text_size" />
+
+                        <TextView
+                            android:id="@+id/tv_xtty_gb"
+                            android:layout_width="@dimen/media_land_btn_size"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/media_land_btn_margin_left"
+                            android:background="@drawable/btn_ctrl_selector"
+                            android:clickable="true"
+                            android:gravity="center"
+                            android:text="设备关闭"
+                            android:textColor="@color/color_white"
+                            android:textSize="@dimen/def_text_size" />
+
+                        <TextView
+                            android:id="@+id/tv_xtty_bf"
+                            android:layout_width="@dimen/media_land_btn_size"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/media_land_btn_margin_left"
+                            android:background="@drawable/btn_ctrl_selector"
+                            android:clickable="true"
+                            android:gravity="center"
+                            android:text="视频播放"
+                            android:textColor="@color/color_white"
+                            android:textSize="@dimen/def_text_size" />
+<!-- 
+                        <TextView
+                            android:id="@+id/tv_xtty_zt"
+                            android:layout_width="@dimen/media_land_btn_size"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/media_land_btn_margin_left"
+                            android:background="@drawable/btn_ctrl_selector"
+                            android:clickable="true"
+                            android:gravity="center"
+                            android:text="视频暂停"
+                            android:textColor="@color/color_white"
+                            android:textSize="@dimen/def_text_size" />
+ -->
+                        <TextView
+                            android:id="@+id/tv_xtty_tz"
+                            android:layout_width="@dimen/media_land_btn_size"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/media_land_btn_margin_left"
+                            android:background="@drawable/btn_ctrl_selector"
+                            android:clickable="true"
+                            android:gravity="center"
+                            android:text="视频停止"
+                            android:textColor="@color/color_white"
+                            android:textSize="@dimen/def_text_size" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!-- 贪渎难遁 -->
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/media_land_margintop"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="贪渎难遁 "
+                        android:textColor="@color/color_white"
+                        android:textSize="@dimen/title_text_size2" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginTop="@dimen/media_land_btn_margin_top"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/tv_tdnx_qd"
+                            android:layout_width="@dimen/media_land_btn_size"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/btn_ctrl_selector"
+                            android:clickable="true"
+                            android:gravity="center"
+                            android:text="设备启动"
+                            android:textColor="@color/color_white"
+                            android:textSize="@dimen/def_text_size" />
+
+                        <TextView
+                            android:id="@+id/tv_tdnx_gb"
+                            android:layout_width="@dimen/media_land_btn_size"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/media_land_btn_margin_left"
+                            android:background="@drawable/btn_ctrl_selector"
+                            android:clickable="true"
+                            android:gravity="center"
+                            android:text="设备关闭"
+                            android:textColor="@color/color_white"
+                            android:textSize="@dimen/def_text_size" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!-- 魔镜互动 -->
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/media_land_margintop"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="魔镜互动"
+                        android:textColor="@color/color_white"
+                        android:textSize="@dimen/title_text_size2" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginTop="@dimen/media_land_btn_margin_top"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/tv_mjhd_qd"
+                            android:layout_width="@dimen/media_land_btn_size"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/btn_ctrl_selector"
+                            android:clickable="true"
+                            android:gravity="center"
+                            android:text="设备启动"
+                            android:textColor="@color/color_white"
+                            android:textSize="@dimen/def_text_size" />
+
+                        <TextView
+                            android:id="@+id/tv_mjhd_gb"
+                            android:layout_width="@dimen/media_land_btn_size"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/media_land_btn_margin_left"
+                            android:background="@drawable/btn_ctrl_selector"
+                            android:clickable="true"
+                            android:gravity="center"
+                            android:text="设备关闭"
+                            android:textColor="@color/color_white"
+                            android:textSize="@dimen/def_text_size" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginTop="@dimen/media_land_btn_margin_top"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/tv_mjhd_gyk"
+                            android:layout_width="@dimen/media_land_btn_size"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/btn_ctrl_selector"
+                            android:clickable="true"
+                            android:gravity="center"
+                            android:text="感应开启"
+                            android:textColor="@color/color_white"
+                            android:textSize="@dimen/def_text_size" />
+
+                        <TextView
+                            android:id="@+id/tv_mjhd_gyg"
+                            android:layout_width="@dimen/media_land_btn_size"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/media_land_btn_margin_left"
+                            android:background="@drawable/btn_ctrl_selector"
+                            android:clickable="true"
+                            android:gravity="center"
+                            android:text="感应关闭"
+                            android:textColor="@color/color_white"
+                            android:textSize="@dimen/def_text_size" />
+
+                        <TextView
+                            android:id="@+id/tv_mjhd_bf"
+                            android:layout_width="@dimen/media_land_btn_size"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/media_land_btn_margin_left"
+                            android:background="@drawable/btn_ctrl_selector"
+                            android:clickable="true"
+                            android:gravity="center"
+                            android:text="视频播放"
+                            android:textColor="@color/color_white"
+                            android:textSize="@dimen/def_text_size" />
+
+                       <!--  <TextView
+                            android:id="@+id/tv_mjhd_zt"
+                            android:layout_width="@dimen/media_land_btn_size"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/media_land_btn_margin_left"
+                            android:background="@drawable/btn_ctrl_selector"
+                            android:clickable="true"
+                            android:gravity="center"
+                            android:text="视频暂停"
+                            android:textColor="@color/color_white"
+                            android:textSize="@dimen/def_text_size" /> -->
+
+                        <TextView
+                            android:id="@+id/tv_mjhd_tz"
+                            android:layout_width="@dimen/media_land_btn_size"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/media_land_btn_margin_left"
+                            android:background="@drawable/btn_ctrl_selector"
+                            android:clickable="true"
+                            android:gravity="center"
+                            android:text="视频停止"
+                            android:textColor="@color/color_white"
+                            android:textSize="@dimen/def_text_size" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!-- 互动长廊 -->
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/media_land_margintop"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="互动长廊"
+                        android:textColor="@color/color_white"
+                        android:textSize="@dimen/title_text_size2" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginTop="@dimen/media_land_btn_margin_top"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/tv_hdcl_qd"
+                            android:layout_width="@dimen/media_land_btn_size"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/btn_ctrl_selector"
+                            android:clickable="true"
+                            android:gravity="center"
+                            android:text="设备启动"
+                            android:textColor="@color/color_white"
+                            android:textSize="@dimen/def_text_size" />
+
+                        <TextView
+                            android:id="@+id/tv_hdcl_gb"
+                            android:layout_width="@dimen/media_land_btn_size"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/media_land_btn_margin_left"
+                            android:background="@drawable/btn_ctrl_selector"
+                            android:clickable="true"
+                            android:gravity="center"
+                            android:text="设备关闭"
+                            android:textColor="@color/color_white"
+                            android:textSize="@dimen/def_text_size" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginTop="@dimen/media_land_btn_margin_top"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/tv_hdcl_gyk"
+                            android:layout_width="@dimen/media_land_btn_size"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/btn_ctrl_selector"
+                            android:clickable="true"
+                            android:gravity="center"
+                            android:text="感应开启"
+                            android:textColor="@color/color_white"
+                            android:textSize="@dimen/def_text_size" />
+
+                        <TextView
+                            android:id="@+id/tv_hdcl_gyg"
+                            android:layout_width="@dimen/media_land_btn_size"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/media_land_btn_margin_left"
+                            android:background="@drawable/btn_ctrl_selector"
+                            android:clickable="true"
+                            android:gravity="center"
+                            android:text="感应关闭"
+                            android:textColor="@color/color_white"
+                            android:textSize="@dimen/def_text_size" />
+
+                        <TextView
+                            android:id="@+id/tv_hdcl_bf"
+                            android:layout_width="@dimen/media_land_btn_size"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/media_land_btn_margin_left"
+                            android:background="@drawable/btn_ctrl_selector"
+                            android:clickable="true"
+                            android:gravity="center"
+                            android:text="视频播放"
+                            android:textColor="@color/color_white"
+                            android:textSize="@dimen/def_text_size" />
+
+                        <!-- <TextView
+                            android:id="@+id/tv_hdcl_zt"
+                            android:layout_width="@dimen/media_land_btn_size"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/media_land_btn_margin_left"
+                            android:background="@drawable/btn_ctrl_selector"
+                            android:clickable="true"
+                            android:gravity="center"
+                            android:text="视频暂停"
+                            android:textColor="@color/color_white"
+                            android:textSize="@dimen/def_text_size" />
+ -->
+                        <TextView
+                            android:id="@+id/tv_hdcl_tz"
+                            android:layout_width="@dimen/media_land_btn_size"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/media_land_btn_margin_left"
+                            android:background="@drawable/btn_ctrl_selector"
+                            android:clickable="true"
+                            android:gravity="center"
+                            android:text="视频停止"
+                            android:textColor="@color/color_white"
+                            android:textSize="@dimen/def_text_size" />
+                    </LinearLayout>
+                </LinearLayout>
+                <!-- 家庭场景 -->
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/media_land_margintop"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="家庭场景"
+                        android:textColor="@color/color_white"
+                        android:textSize="@dimen/title_text_size2" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginTop="@dimen/media_land_btn_margin_top"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/tv_jtcj_qd"
+                            android:layout_width="@dimen/media_land_btn_size"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/btn_ctrl_selector"
+                            android:clickable="true"
+                            android:gravity="center"
+                            android:text="设备启动"
+                            android:textColor="@color/color_white"
+                            android:textSize="@dimen/def_text_size" />
+
+                        <TextView
+                            android:id="@+id/tv_jtcj_gb"
+                            android:layout_width="@dimen/media_land_btn_size"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/media_land_btn_margin_left"
+                            android:background="@drawable/btn_ctrl_selector"
+                            android:clickable="true"
+                            android:gravity="center"
+                            android:text="设备关闭"
+                            android:textColor="@color/color_white"
+                            android:textSize="@dimen/def_text_size" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginTop="@dimen/media_land_btn_margin_top"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/tv_jtcj_gyk"
+                            android:layout_width="@dimen/media_land_btn_size"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/btn_ctrl_selector"
+                            android:clickable="true"
+                            android:gravity="center"
+                            android:text="感应开启"
+                            android:textColor="@color/color_white"
+                            android:textSize="@dimen/def_text_size" />
+
+                        <TextView
+                            android:id="@+id/tv_jtcj_gyg"
+                            android:layout_width="@dimen/media_land_btn_size"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/media_land_btn_margin_left"
+                            android:background="@drawable/btn_ctrl_selector"
+                            android:clickable="true"
+                            android:gravity="center"
+                            android:text="感应关闭"
+                            android:textColor="@color/color_white"
+                            android:textSize="@dimen/def_text_size" />
+
+                        <TextView
+                            android:id="@+id/tv_jtcj_bf"
+                            android:layout_width="@dimen/media_land_btn_size"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/media_land_btn_margin_left"
+                            android:background="@drawable/btn_ctrl_selector"
+                            android:clickable="true"
+                            android:gravity="center"
+                            android:text="视频播放"
+                            android:textColor="@color/color_white"
+                            android:textSize="@dimen/def_text_size" />
+
+                        <!-- <TextView
+                            android:id="@+id/tv_jtcj_zt"
+                            android:layout_width="@dimen/media_land_btn_size"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/media_land_btn_margin_left"
+                            android:background="@drawable/btn_ctrl_selector"
+                            android:clickable="true"
+                            android:gravity="center"
+                            android:text="视频暂停"
+                            android:textColor="@color/color_white"
+                            android:textSize="@dimen/def_text_size" /> -->
+
+                        <TextView
+                            android:id="@+id/tv_jtcj_tz"
+                            android:layout_width="@dimen/media_land_btn_size"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/media_land_btn_margin_left"
+                            android:background="@drawable/btn_ctrl_selector"
+                            android:clickable="true"
+                            android:gravity="center"
+                            android:text="视频停止"
+                            android:textColor="@color/color_white"
+                            android:textSize="@dimen/def_text_size" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!-- 忏悔书 -->
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/media_land_margintop"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="忏悔书 "
+                        android:textColor="@color/color_white"
+                        android:textSize="@dimen/title_text_size2" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginTop="@dimen/media_land_btn_margin_top"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/tv_chs_qd"
+                            android:layout_width="@dimen/media_land_btn_size"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/btn_ctrl_selector"
+                            android:clickable="true"
+                            android:gravity="center"
+                            android:text="设备启动"
+                            android:textColor="@color/color_white"
+                            android:textSize="@dimen/def_text_size" />
+
+                        <TextView
+                            android:id="@+id/tv_chs_gb"
+                            android:layout_width="@dimen/media_land_btn_size"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/media_land_btn_margin_left"
+                            android:background="@drawable/btn_ctrl_selector"
+                            android:clickable="true"
+                            android:gravity="center"
+                            android:text="设备关闭"
+                            android:textColor="@color/color_white"
+                            android:textSize="@dimen/def_text_size" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!-- 电子签名 -->
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/media_land_margintop"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="电子签名 "
+                        android:textColor="@color/color_white"
+                        android:textSize="@dimen/title_text_size2" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginTop="@dimen/media_land_btn_margin_top"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/tv_dzqm_qd"
+                            android:layout_width="@dimen/media_land_btn_size"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/btn_ctrl_selector"
+                            android:clickable="true"
+                            android:gravity="center"
+                            android:text="设备启动"
+                            android:textColor="@color/color_white"
+                            android:textSize="@dimen/def_text_size" />
+
+                        <TextView
+                            android:id="@+id/tv_dzqm_gb"
+                            android:layout_width="@dimen/media_land_btn_size"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/media_land_btn_margin_left"
+                            android:background="@drawable/btn_ctrl_selector"
+                            android:clickable="true"
+                            android:gravity="center"
+                            android:text="设备关闭"
+                            android:textColor="@color/color_white"
+                            android:textSize="@dimen/def_text_size" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!-- 内容 -->
+            </LinearLayout>
+        </ScrollView>
+        <!-- 最外蓝色 -->
+
+        <TextView
+            android:layout_width="@dimen/btn_cancel"
+            android:layout_height="@dimen/btn_cancel"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="@dimen/cancle_btn_margin"
+            android:layout_marginRight="@dimen/cancle_btn_margin"
+            android:background="@drawable/btn_ctrl_cancel"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="cancle"
+            android:text="@string/btn_ctrl_cancel"
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/def_text_size" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:paddingBottom="3dip"
+        android:paddingLeft="15dip"
+        android:paddingRight="15dip"
+        android:paddingTop="3dip"
+        android:text="设备状态" />
+
+</RelativeLayout>

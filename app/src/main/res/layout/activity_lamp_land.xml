@@ -1,0 +1,350 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_window"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/activity_bg" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btn_status"
+        android:layout_margin="@dimen/ctrl_margin"
+        android:background="@drawable/activity_ctrl_bg"
+        android:padding="@dimen/ctrl_margin" >
+
+        <!-- 横屏，分三份 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="100dip"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="30dip"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="灯光控制(横屏)"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/title_text_size1" />
+            <!-- 中间部分按钮 -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <!-- 接待室 -->
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="@dimen/lamp_land_btn_margin1"
+                    android:layout_marginRight="@dimen/lamp_land_btn_margin1"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="接待室"
+                        android:textColor="@color/color_white"
+                        android:textSize="@dimen/title_text_size2" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginTop="@dimen/magin_title"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/tv_jds_k"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/lamp_land_btn_margin2"
+                            android:layout_weight="1"
+                            android:background="@drawable/btn_ctrl_selector"
+                            android:clickable="true"
+                            android:gravity="center"
+                            android:text="开"
+                            android:textColor="@color/color_white"
+                            android:textSize="@dimen/def_text_size" />
+
+                        <TextView
+                            android:id="@+id/tv_jds_g"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/lamp_land_btn_margin2"
+                            android:layout_weight="1"
+                            android:background="@drawable/btn_ctrl_selector"
+                            android:clickable="true"
+                            android:gravity="center"
+                            android:text="关"
+                            android:textColor="@color/color_white"
+                            android:textSize="@dimen/def_text_size" />
+                    </LinearLayout>
+                </LinearLayout>
+                <!-- 序厅 -->
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/lamp_land_btn_margin1"
+                    android:layout_marginRight="@dimen/lamp_land_btn_margin1"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="序厅"
+                        android:textColor="@color/color_white"
+                        android:textSize="@dimen/title_text_size2" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginTop="@dimen/magin_title"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/tv_xt_k"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/lamp_land_btn_margin2"
+                            android:layout_weight="1"
+                            android:background="@drawable/btn_ctrl_selector"
+                            android:clickable="true"
+                            android:gravity="center"
+                            android:text="开"
+                            android:textColor="@color/color_white"
+                            android:textSize="@dimen/def_text_size" />
+
+                        <TextView
+                            android:id="@+id/tv_xt_g"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/lamp_land_btn_margin2"
+                            android:layout_weight="1"
+                            android:background="@drawable/btn_ctrl_selector"
+                            android:clickable="true"
+                            android:gravity="center"
+                            android:text="关"
+                            android:textColor="@color/color_white"
+                            android:textSize="@dimen/def_text_size" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/lamp_land_btn_margin1"
+                    android:layout_marginRight="@dimen/lamp_land_btn_margin1"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical" />
+            </LinearLayout>
+
+            <!-- 下面部分按钮 -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <!-- 第一篇章 -->
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/lamp_land_btn_margin1"
+                    android:layout_marginRight="@dimen/lamp_land_btn_margin1"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="第一篇章"
+                        android:textColor="@color/color_white"
+                        android:textSize="@dimen/title_text_size2" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginTop="@dimen/magin_title"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/tv_d1_k"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/lamp_land_btn_margin2"
+                            android:layout_weight="1"
+                            android:background="@drawable/btn_ctrl_selector"
+                            android:clickable="true"
+                            android:gravity="center"
+                            android:text="开"
+                            android:textColor="@color/color_white"
+                            android:textSize="@dimen/def_text_size" />
+
+                        <TextView
+                            android:id="@+id/tv_d1_g"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/lamp_land_btn_margin2"
+                            android:layout_weight="1"
+                            android:background="@drawable/btn_ctrl_selector"
+                            android:clickable="true"
+                            android:gravity="center"
+                            android:text="关"
+                            android:textColor="@color/color_white"
+                            android:textSize="@dimen/def_text_size" />
+                    </LinearLayout>
+                </LinearLayout>
+                <!-- 第二篇章 -->
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/lamp_land_btn_margin1"
+                    android:layout_marginRight="@dimen/lamp_land_btn_margin1"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="第二篇章"
+                        android:textColor="@color/color_white"
+                        android:textSize="@dimen/title_text_size2" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginTop="@dimen/magin_title"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/tv_d2_k"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/lamp_land_btn_margin2"
+                            android:layout_weight="1"
+                            android:background="@drawable/btn_ctrl_selector"
+                            android:clickable="true"
+                            android:gravity="center"
+                            android:text="开"
+                            android:textColor="@color/color_white"
+                            android:textSize="@dimen/def_text_size" />
+
+                        <TextView
+                            android:id="@+id/tv_d2_g"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/lamp_land_btn_margin2"
+                            android:layout_weight="1"
+                            android:background="@drawable/btn_ctrl_selector"
+                            android:clickable="true"
+                            android:gravity="center"
+                            android:text="关"
+                            android:textColor="@color/color_white"
+                            android:textSize="@dimen/def_text_size" />
+                    </LinearLayout>
+                </LinearLayout>
+                <!-- 第三篇章 -->
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/lamp_land_btn_margin1"
+                    android:layout_marginRight="@dimen/lamp_land_btn_margin1"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="第三篇章"
+                        android:textColor="@color/color_white"
+                        android:textSize="@dimen/title_text_size2" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginTop="@dimen/magin_title"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/tv_d3_k"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/lamp_land_btn_margin2"
+                            android:layout_weight="1"
+                            android:background="@drawable/btn_ctrl_selector"
+                            android:clickable="true"
+                            android:gravity="center"
+                            android:text="开"
+                            android:textColor="@color/color_white"
+                            android:textSize="@dimen/def_text_size" />
+
+                        <TextView
+                            android:id="@+id/tv_d3_g"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/lamp_land_btn_margin2"
+                            android:layout_weight="1"
+                            android:background="@drawable/btn_ctrl_selector"
+                            android:clickable="true"
+                            android:gravity="center"
+                            android:text="关"
+                            android:textColor="@color/color_white"
+                            android:textSize="@dimen/def_text_size" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <!-- 内容 -->
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="@dimen/btn_cancel"
+            android:layout_height="@dimen/btn_cancel"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="@dimen/cancle_btn_margin"
+            android:layout_marginRight="@dimen/cancle_btn_margin"
+            android:background="@drawable/btn_ctrl_cancel"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="cancle"
+            android:text="@string/btn_ctrl_cancel"
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/def_text_size" />
+    </RelativeLayout>
+    <!-- 最外蓝色 -->
+
+    <Button
+        android:id="@+id/btn_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:paddingBottom="3dip"
+        android:paddingLeft="15dip"
+        android:paddingRight="15dip"
+        android:paddingTop="3dip"
+        android:text="设备状态" />
+
+</RelativeLayout>

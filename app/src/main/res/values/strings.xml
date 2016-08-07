@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">天津嘉海售楼处中控系统</string>
+    <string name="btn_ctrl_cancel">返回</string>
+    <!-- 通信相关 -->
+    <string name="con_timeout">连接设备超时</string>
+    <string name="con_sec">连接设备成功</string>
+    <string name="con_fail">连接设备失败</string>
+    <string name="con_cut">设备已断开</string>
+    <string name="send_null">请输入命令...</string>
+    <string name="sending_pro">正在发送...</string>
+    <string name="send_delay">命令还没发送完毕，请稍后...</string>
+    <string name="send_no_command">没有找到此命令文件</string>
+    <string name="send_sec">发送成功</string>
+    <string name="send_nofk">无反馈</string>
+    <string name="send_dofail">执行失败</string>
+    <string name="send_fail">发送失败</string>
+    <string name="con_cut1">设备已断开,请重新连接</string>
+
+</resources>

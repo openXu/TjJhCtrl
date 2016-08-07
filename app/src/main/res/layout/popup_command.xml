@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv_towo"
+        android:layout_width="350dip"
+        android:layout_height="wrap_content"
+        android:background="#44ff0000"
+        android:gravity="center"
+        android:paddingBottom="15dip"
+        android:paddingTop="15dip"
+        android:text="发送记录：拖我"
+        android:textColor="#ffffff"
+        android:textSize="18sp" />
+
+    <ScrollView
+        android:id="@+id/sl"
+        android:layout_width="350dip"
+        android:layout_height="300dip"
+        android:padding="10dip" >
+
+        <TextView
+            android:id="@+id/tv_coommand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:scrollbars="vertical"
+            android:singleLine="false"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+    </ScrollView>
+
+</LinearLayout>

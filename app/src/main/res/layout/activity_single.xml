@@ -1,0 +1,213 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_window"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/activity_bg" >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/ctrl_margin"
+        android:padding="@dimen/ctrl_margin">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tv_open_1"
+                        android:layout_width="@dimen/main_btn_width"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="20dip"
+                        android:background="@drawable/btn_ctrl_selector"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:text="投影机1开"
+                        android:textColor="@color/color_white"
+                        android:textSize="@dimen/def_text_size" />
+
+                    <TextView
+                        android:id="@+id/tv_close_1"
+                        android:layout_width="@dimen/main_btn_width"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dip"
+                        android:background="@drawable/btn_ctrl_selector"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:text="投影机1关"
+                        android:textColor="@color/color_white"
+                        android:textSize="@dimen/def_text_size" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginTop="30dip"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tv_open_2"
+                        android:layout_width="@dimen/main_btn_width"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="20dip"
+                        android:background="@drawable/btn_ctrl_selector"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:text="投影机2开"
+                        android:textColor="@color/color_white"
+                        android:textSize="@dimen/def_text_size" />
+
+                    <TextView
+                        android:id="@+id/tv_close_2"
+                        android:layout_width="@dimen/main_btn_width"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dip"
+                        android:background="@drawable/btn_ctrl_selector"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:text="投影机2关"
+                        android:textColor="@color/color_white"
+                        android:textSize="@dimen/def_text_size" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginTop="30dip"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tv_open_3"
+                        android:layout_width="@dimen/main_btn_width"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="20dip"
+                        android:background="@drawable/btn_ctrl_selector"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:text="投影机3开"
+                        android:textColor="@color/color_white"
+                        android:textSize="@dimen/def_text_size" />
+
+                    <TextView
+                        android:id="@+id/tv_close_3"
+                        android:layout_width="@dimen/main_btn_width"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dip"
+                        android:background="@drawable/btn_ctrl_selector"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:text="投影机3关"
+                        android:textColor="@color/color_white"
+                        android:textSize="@dimen/def_text_size" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginTop="30dip"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tv_open_4"
+                        android:layout_width="@dimen/main_btn_width"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="20dip"
+                        android:background="@drawable/btn_ctrl_selector"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:text="投影机4开"
+                        android:textColor="@color/color_white"
+                        android:textSize="@dimen/def_text_size" />
+
+                    <TextView
+                        android:id="@+id/tv_close_4"
+                        android:layout_width="@dimen/main_btn_width"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dip"
+                        android:background="@drawable/btn_ctrl_selector"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:text="投影机4关"
+                        android:textColor="@color/color_white"
+                        android:textSize="@dimen/def_text_size" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginTop="30dip"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tv_s_open"
+                        android:layout_width="@dimen/main_btn_width"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="20dip"
+                        android:background="@drawable/btn_ctrl_selector"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:text="播放服务器开"
+                        android:textColor="@color/color_white"
+                        android:textSize="@dimen/def_text_size" />
+
+                    <TextView
+                        android:id="@+id/tv_s_close"
+                        android:layout_width="@dimen/main_btn_width"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dip"
+                        android:background="@drawable/btn_ctrl_selector"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:text="播放服务器关"
+                        android:textColor="@color/color_white"
+                        android:textSize="@dimen/def_text_size" />
+
+                </LinearLayout>
+                <!-- 最外蓝色 -->
+            </LinearLayout>
+        </ScrollView>
+
+
+    <TextView
+        android:layout_width="@dimen/btn_cancel"
+        android:layout_height="@dimen/btn_cancel"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/cancle_btn_margin"
+        android:layout_marginRight="@dimen/cancle_btn_margin"
+        android:background="@drawable/btn_ctrl_cancel"
+        android:clickable="true"
+        android:gravity="center"
+        android:onClick="cancle"
+        android:text="@string/btn_ctrl_cancel"
+        android:textColor="@color/color_black"
+        android:textSize="@dimen/def_text_size" />
+</RelativeLayout>
+    <Button
+        android:id="@+id/btn_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:paddingBottom="3dip"
+        android:paddingLeft="15dip"
+        android:paddingRight="15dip"
+        android:paddingTop="3dip"
+        android:text="设备状态" />
+
+</RelativeLayout>
